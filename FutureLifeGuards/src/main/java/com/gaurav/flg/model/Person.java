@@ -1,4 +1,4 @@
-package com.gaurav.model;
+package com.gaurav.flg.model;
 
 import java.util.Calendar;
 import java.util.Date;
@@ -8,7 +8,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 @XmlRootElement(name="person")
 public class Person {
 
-	private int pID;
+	private long pID;
 	private String fName;
 	private String lName;
 	private String sexCd;
@@ -17,7 +17,7 @@ public class Person {
 	private String emailId;
 	
 	public Person(){
-		pID=0;
+		pID=0L;
 		fName="";
 		lName="";
 		sexCd="Male";
@@ -26,11 +26,11 @@ public class Person {
 		emailId="";
 	}
 
-	public int getpID() {
-		return pID;
+	public long getpID() {
+		return new Long(pID);
 	}
 
-	public void setpID(int pID) {
+	public void setpID(long pID) {
 		this.pID = pID;
 	}
 

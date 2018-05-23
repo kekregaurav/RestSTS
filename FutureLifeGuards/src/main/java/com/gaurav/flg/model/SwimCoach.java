@@ -1,4 +1,4 @@
-package com.gaurav.model;
+package com.gaurav.flg.model;
 
 import javax.xml.bind.annotation.XmlRootElement;
 
