@@ -3,11 +3,14 @@ package com.gaurav.flg.model;
 import java.util.Calendar;
 import java.util.Date;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement(name="person")
+@Entity
 public class Person {
-
+    @Id
 	private long pID;
 	private String fName;
 	private String lName;
