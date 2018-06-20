@@ -1,20 +1,15 @@
 package com.gaurav.flg;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 import javax.ws.rs.core.Response;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 
 import com.gaurav.flg.model.Person;
 import com.gaurav.flg.repo.PersonRepo;
 
-@Service
+
 public class EntityServiceImpl implements EntityService{
 
 	/*Map <Long, Person> prsnList = new HashMap<Long,Person>();//
