@@ -13,8 +13,10 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.Response;
 
-import com.gaurav.flg.model.Person;
+import org.springframework.stereotype.Service;
 
+import com.gaurav.flg.model.Person;
+@Service
 @Consumes("application/xml,application/json")
 @Produces("application/xml,application/json")
 @Path("/entityservice")
